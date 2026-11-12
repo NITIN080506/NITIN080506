@@ -8,7 +8,7 @@
 
 <!-- Animated Typing Line -->
 <a href="https://github.com/NITIN080506">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=3200&pause=900&color=7AA2F7&center=true&vCenter=true&width=760&lines=Building+production-ready+serverless+pipelines%2C+autonomous+LLM+agents%2C+and+full-stack+intelligent+systems." alt="Typing Tagline" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=2500&pause=800&color=7AA2F7&center=true&vCenter=true&width=560&lines=Building+production-ready+serverless+pipelines;Autonomous+LLM+agents;Full-stack+intelligent+systems" alt="Typing Tagline" />
 </a>
 
 Building production-ready serverless pipelines, autonomous LLM agents, and full-stack intelligent systems.
