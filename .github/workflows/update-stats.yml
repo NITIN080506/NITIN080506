@@ -1,0 +1,37 @@
+name: Update Profile Stats SVGs
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate GitHub Stats Cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: NITIN080506
+          THEME: tokyonight
+
+      - name: Save SVGs to assets/
+        run: |
+          mkdir -p assets
+          cp profile-summary-card-output/tokyonight/0-profile-details.svg assets/github-stats.svg
+          cp profile-summary-card-output/tokyonight/2-most-commit-language.svg assets/top-langs.svg
+          curl -fSL "https://leetcard.jacoblin.cool/Nitinkeshav0805?theme=tokyonight&font=Karma&ext=heatmap" -o assets/leetcode-stats.svg
+
+      - name: Commit SVGs to Repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: refresh profile stats SVGs" && git push)
