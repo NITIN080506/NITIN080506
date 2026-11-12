@@ -67,12 +67,14 @@ Building production-ready serverless pipelines, autonomous LLM agents, and full-
 ### 📊 GitHub Activity
 
 <div align="center">
-  <img height="165em" src="https://github-readme-stats.vercel.app/api?username=NITIN080506&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" />
-  <img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=NITIN080506&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" />
+  <img height="165em" src="./assets/github-stats.svg" alt="GitHub Stats" />
+  <img height="165em" src="./assets/top-langs.svg" alt="Top Languages" />
 </div>
+
+---
 
 ### 🧩 LeetCode Progress
 
 <div align="center">
-  <img src="https://leetcard.jacoblin.cool/Nitinkeshav0805/?theme=tokyonight&font=Karma&ext=heatmap" alt="LeetCode Stats" />
+  <img src="./assets/leetcode-stats.svg" alt="LeetCode Stats" />
 </div>
